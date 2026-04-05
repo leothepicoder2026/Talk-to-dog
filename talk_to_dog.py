@@ -15,7 +15,7 @@ def display_menu():
     print("3. Tell a Joke")
     print("4. Compliment the Dog")
     print("5. Ask for Advice")
-    print("6. Say Goodbye")
+    print("6. Pet the Dog")
     print("0. Exit")
     print("\n" + "="*50)
 
@@ -85,16 +85,17 @@ def dog_advice():
     display_dog(dog_art, speech)
 
 
-def dog_goodbye():
-    """Dog says goodbye."""
+def dog_pet():
+    """Dog gets petted."""
     dog_art = """
-     \\ /
-    (~o~)
-     / \\
-      | |
+       / \\__
+      (    @\\___
+      /         O
+     /   (_____/
+    /_____/   U
 """
-    speech = "Bye buddy! Come back and visit soon! 🐕"
-    display_dog(dog_art, speech)
+    speech = "N/A"
+    display_dog(dog_art)
 
 
 def display_dog(ascii_art, speech):
@@ -126,7 +127,7 @@ def main():
         '3': ('Tell a Joke', dog_joke),
         '4': ('Compliment the Dog', dog_compliment),
         '5': ('Ask for Advice', dog_advice),
-        '6': ('Say Goodbye', dog_goodbye),
+        '6': ('Pet The Dog', dog_pet),
     }
     
     while True:
