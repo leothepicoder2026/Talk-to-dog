@@ -11,7 +11,7 @@ import tempfile
 import urllib.request
 from urllib.error import URLError, HTTPError
 
-__version__ = "2.0.0"
+__version__ = "3.0.0"
 REMOTE_SCRIPT_URL = "https://raw.githubusercontent.com/leothepicoder2026/Talk-to-dog/main/talk_to_dog.py"
 
 def display_menu():
