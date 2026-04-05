@@ -26,6 +26,15 @@ def display_menu():
     print("4. Compliment the Dog")
     print("5. Ask for Advice")
     print("6. Pet the Dog")
+    print("7. Ask About Favorite Food")
+    print("8. Play Fetch")
+    print("9. Ask to Do a Trick")
+    print("10. Ask About Dreams")
+    print("11. Tell the Dog You Love It")
+    print("12. Ask the Dog to Sing")
+    print("13. Play Hide and Seek")
+    print("14. Ask About Friends")
+    print("15. Give a Treat")
     print("0. Exit")
     print("\n" + "="*50)
 
@@ -105,6 +114,123 @@ def dog_pet():
     /_____/   U
 """
     speech = "The dog did not say anything, but it looks very happy! 🥰"
+    display_dog(dog_art, speech)
+
+
+def dog_favorite_food():
+    """Dog talks about its favorite food."""
+    dog_art = """
+     ^__^
+     (oo)\\_______
+     (__)\\_______) /~~/
+        ||----w |
+        ||     ||
+"""
+    speech = "My favorite food? Bones and treats!\nWhat's yours? 🦴"
+    display_dog(dog_art, speech)
+
+
+def dog_play_fetch():
+    """Dog plays fetch."""
+    dog_art = """
+        / \\__
+       (    @\\___
+       /         O
+      /   (_____/
+     /_____/   U
+"""
+    speech = "Let's play fetch! Throw the ball!\nI'm ready to run! 🏃‍♂️🐕"
+    display_dog(dog_art, speech)
+
+
+def dog_do_trick():
+    """Dog does a trick."""
+    dog_art = """
+       / \\__
+      (    @\\___
+      /   O    O
+     /   (_____/
+    /_____/   U
+"""
+    speech = "Watch this! *rolls over*\nDid I do good? 🐕"
+    display_dog(dog_art, speech)
+
+
+def dog_dreams():
+    """Dog talks about its dreams."""
+    dog_art = """
+     ^__^
+     (oo)\\_______
+     (__)\\_______) /~~/
+        ||----w |
+        ||     ||
+"""
+    speech = "I dream about chasing squirrels\nand endless belly rubs! 🌙🐕"
+    display_dog(dog_art, speech)
+
+
+def dog_love():
+    """Dog receives love."""
+    dog_art = """
+       / \\__
+      (    @\\___
+      /         O
+     /   (_____/
+    /_____/   U
+"""
+    speech = "I love you too! You're my best friend! ❤️🐕"
+    display_dog(dog_art, speech)
+
+
+def dog_sing():
+    """Dog sings a song."""
+    dog_art = """
+        / \\__
+       (    @\\___
+       /   O    O
+      /   (_____/
+     /_____/   U
+"""
+    speech = "🎵 Woof woof, bark bark,\nI love to sing in the park! 🎵"
+    display_dog(dog_art, speech)
+
+
+def dog_hide_seek():
+    """Dog plays hide and seek."""
+    dog_art = """
+     ^__^
+     (oo)\\_______
+     (__)\\_______) /~~/
+        ||----w |
+        ||     ||
+"""
+    speech = "Ready or not, here I come!\n*searches around* 🐕🔍"
+    display_dog(dog_art, speech)
+
+
+def dog_friends():
+    """Dog talks about its friends."""
+    dog_art = """
+       / \\__
+      (    @\\___
+      /         O
+     /   (_____/
+    /_____/   U
+"""
+    speech = "My friends are the best!\nCats, birds, and you! 🐱🐦"
+    display_dog(dog_art, speech)
+
+
+def dog_treat():
+    """Dog gets a treat."""
+    dog_art = """
+        / \\__
+       (    @\\___
+       /   O    O
+      /   (_____/
+     /_____/   U
+"""
+    speech = "Yummy treat! Thank you!\n*munch munch* 🍖"
     display_dog(dog_art, speech)
 
 
@@ -212,11 +338,20 @@ def main():
         '4': ('Compliment the Dog', dog_compliment),
         '5': ('Ask for Advice', dog_advice),
         '6': ('Pet The Dog', dog_pet),
+        '7': ('Ask About Favorite Food', dog_favorite_food),
+        '8': ('Play Fetch', dog_play_fetch),
+        '9': ('Ask to Do a Trick', dog_do_trick),
+        '10': ('Ask About Dreams', dog_dreams),
+        '11': ('Tell the Dog You Love It', dog_love),
+        '12': ('Ask the Dog to Sing', dog_sing),
+        '13': ('Play Hide and Seek', dog_hide_seek),
+        '14': ('Ask About Friends', dog_friends),
+        '15': ('Give a Treat', dog_treat),
     }
     
     while True:
         display_menu()
-        choice = input("Enter your choice (0-6): ").strip()
+        choice = input("Enter your choice (0-15): ").strip()
         
         if choice == '0':
             print("\nThanks for talking to the dog! Goodbye! 👋\n")
@@ -226,7 +361,7 @@ def main():
             print(f"\n✓ You chose: {option_name}")
             option_func()
         else:
-            print("\n❌ Invalid choice! Please enter a number between 0 and 6.")
+            print("\n❌ Invalid choice! Please enter a number between 0 and 15.")
         
         input("Press Enter to continue...")
 
