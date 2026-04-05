@@ -1,0 +1,6 @@
+This is Talk to dog
+You can run it by opening the .py file in the terminal
+You can select different number keys to get different responses
+Press 0 to exit
+
+Peace
