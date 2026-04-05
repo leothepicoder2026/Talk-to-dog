@@ -94,8 +94,8 @@ def dog_pet():
      /   (_____/
     /_____/   U
 """
-    speech = "N/A"
-    display_dog(dog_art)
+    speech = "The dog did not say anything, but it looks very happy! 🥰"
+    display_dog(dog_art, speech)
 
 
 def display_dog(ascii_art, speech):
